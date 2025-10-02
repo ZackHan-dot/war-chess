@@ -13,9 +13,9 @@ export interface GridMapItem {
 }
 
 export class GridMap {
+  private static _instance: GridMap | null = null;
   static readonly WIDTH = 50;
   static readonly HEIGHT = 50;
-  static readonly Instance = new GridMap();
 
   // 使用一维数组，性能更好：O(1) 索引，内存连续
   private grid: (GridMapItem | null)[] = [];
@@ -27,6 +27,13 @@ export class GridMap {
   private initializeGrid() {
     const size = GridMap.WIDTH * GridMap.HEIGHT;
     this.grid = new Array(size).fill(null);
+  }
+
+  public static get Instance(): GridMap {
+    if (!this._instance) {
+      this._instance = new GridMap();
+    }
+    return this._instance;
   }
 
   private getIndex(x: number, y: number): number {

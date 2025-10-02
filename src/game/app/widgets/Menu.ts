@@ -156,7 +156,6 @@ export class MenuWidget extends Container {
     public show(payload: any): void {
         this.visible = true;
         this.payload = payload;
-        console.log(payload);
     }
 
     // 隐藏菜单

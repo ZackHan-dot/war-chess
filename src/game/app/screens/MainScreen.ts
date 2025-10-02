@@ -191,7 +191,6 @@ export class MainScreen extends Container {
     // TODO: 添加业务逻辑（如选中单位、放置建筑等）
     this.menuWidget.hide();
     const gridItem = GridMap.Instance.getGridInfoByPos(gx, gy);
-    console.log(gx, gy, GridMap.Instance);
     if (gridItem?.entity) {
       const x = (gx + 0.5) * MAP_CONFIG.tileSize;
       const y = (gy + 0.5) * MAP_CONFIG.tileSize;
