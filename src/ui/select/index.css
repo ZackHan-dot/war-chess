@@ -1,0 +1,20 @@
+.select-wrapper {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: middle;
+    width: 100%;
+    padding: 10px 0;
+    gap: 10px;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.24);
+}
+.select-wrapper .select-item-card {
+    flex: none;
+    padding: 5px;
+    background-color: white;
+    border: 10px solid rgba(0, 0, 0, 0.5);
+}

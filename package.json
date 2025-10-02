@@ -1,0 +1,41 @@
+{
+  "name": "my-chess",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "npm run dev",
+    "build": "tsc && vite build",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@esotericsoftware/spine-pixi-v8": "^4.2.66",
+    "@pixi/sound": "^6.0.1",
+    "@pixi/tilemap": "^5.0.2",
+    "@pixi/ui": "^2.2.0",
+    "@tailwindcss/vite": "^4.1.13",
+    "clsx": "^2.1.1",
+    "gsap": "^3.12.5",
+    "pathfinding": "^0.4.18",
+    "pixi-viewport": "^6.0.3",
+    "pixi.js": "^8.6.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^4.1.13"
+  },
+  "devDependencies": {
+    "@assetpack/core": "^1.2.2",
+    "@eslint/js": "^9.16.0",
+    "@types/pathfinding": "^0.1.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.16.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.14.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.18.2",
+    "vite": "^6.0.0"
+  }
+}
